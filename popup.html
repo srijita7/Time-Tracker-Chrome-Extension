@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .buttons
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+        #timeTableDiv
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table
+        {
+            text-align: center;
+        }
+        table tr:first-child
+        {
+            background-color: rgb(139, 219, 235);
+        }
+        button {
+            height: 40px;
+            width: 100px;
+            outline: none;
+            background-color: aqua;
+            margin-top: 30px;
+        }
+
+        #timeTable {
+            width: 560px;
+            border: 1px solid black;
+        }
+
+        tr:nth-child(even) {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="timeTableDiv">
+        <h1>Time tracker</h1>
+        <table id="timeTable"></table>
+    </div>
+    <div id="errorMessage"></div>
+    <div class="buttons">
+        <button id="btnShowTable">Load</button>
+        <button id="btnClearTimes">Clear</button>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+
+</html>
